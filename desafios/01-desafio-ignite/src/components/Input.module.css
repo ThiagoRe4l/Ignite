@@ -1,0 +1,33 @@
+.input {
+    /* Define uma borda de 1px sólida com cor definida pela variável CSS 'var(--gray-700)' */
+    border: 1px solid var(--gray-700);
+    /* Adiciona bordas arredondadas ao elemento */
+    border-radius: 8px;
+    
+    /* Define a cor de fundo do elemento usando uma variável CSS */
+    background-color: var(--gray-500);
+    /* Define a cor do texto do elemento usando uma variável CSS */
+    color: var(--gray-100);
+    
+    /* Define a altura do elemento */
+    height: 3.375rem;
+    /* Define o preenchimento interno (padding) do elemento */
+    padding: 1rem;
+    /* Define a largura do elemento para ocupar 100% do contêiner pai */
+    width: 100%;
+    
+    /* Define a altura da linha do texto */
+    line-height: 140%;
+}
+
+/* Define o estilo para o placeholder do input */
+.input::placeholder {
+    /* Define a cor do placeholder usando uma variável CSS */
+    color: var(--gray-300);
+}
+
+/* Define o estilo para o input quando ele está focado */
+.input:focus {
+    /* Altera a cor da borda do input quando ele está focado */
+    border-color: var(--purple-dark);
+}

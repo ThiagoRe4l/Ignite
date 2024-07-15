@@ -1,0 +1,43 @@
+.button {
+    /* Define um contêiner flexível */
+    display: flex;
+    /* Alinha os itens no centro ao longo do eixo transversal (vertical) */
+    align-items: center;
+    /* Justifica o conteúdo no centro ao longo do eixo principal (horizontal) */
+    justify-content: center;
+  
+    /* Define a altura do botão */
+    height: 3.25rem;
+    /* Define o preenchimento interno (padding) do botão */
+    padding: 1rem;
+  
+    /* Define a cor de fundo do botão usando uma variável CSS */
+    background-color: var(--blue-dark);
+    /* Define a cor do texto do botão usando uma variável CSS */
+    color: var(--gray-100);
+  
+    /* Remove a borda padrão do botão */
+    border: 0;
+    /* Adiciona bordas arredondadas ao botão */
+    border-radius: 8px;
+    /* Define um espaçamento entre os elementos filhos dentro do botão */
+    gap: 0.5rem;
+    /* Remove qualquer sombra de caixa */
+    box-shadow: none;
+  
+    /* Define a altura da linha do texto */
+    line-height: 140%;
+    /* Define a espessura do texto */
+    font-weight: bold;
+    /* Define o tamanho da fonte */
+    font-size: 0.875rem;
+  
+    /* Adiciona uma transição suave para todas as propriedades com duração de 0.2s */
+    transition: 0.2s;
+}
+  
+/* Define o estilo do botão quando o cursor do mouse está sobre ele (hover) */
+.button:hover {
+    /* Altera a cor de fundo do botão usando uma variável CSS */
+    background-color: var(--blue);
+}

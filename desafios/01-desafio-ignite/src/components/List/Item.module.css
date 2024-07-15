@@ -1,0 +1,137 @@
+.container {
+  /* Define o container como um flex container ocupando toda a largura disponível */
+  display: flex;
+  flex: 1;
+  /* Espaçamento entre os elementos filhos do container */
+  gap: 0.75rem;
+
+  /* Centraliza verticalmente os itens dentro do container */
+  align-items: center;
+  /* Distribui os itens igualmente ao longo do eixo principal (horizontal) */
+  justify-content: space-between;
+
+  /* Espaçamento interno do container */
+  padding: 1rem;
+  /* Borda arredondada do container */
+  border-radius: 8px;
+
+  /* Cor de fundo do container */
+  background-color: var(--gray-500);
+  /* Borda sólida de 1px com cor especificada */
+  border: 1px solid var(--gray-400);
+}
+
+.container div {
+  /* Define todos os elementos <div> dentro do container como flex containers */
+  display: flex;
+}
+
+.container label {
+  /* Define os elementos <label> dentro do container como flex containers */
+  display: flex;
+  /* Espaçamento interno do label */
+  padding: 3px;
+  /* Centraliza verticalmente os itens dentro do label */
+  align-items: center;
+  /* Espaçamento entre os itens dentro do label */
+  gap: 0.75rem;
+}
+
+.container label input[type='checkbox'] {
+  /* Esconde o input do tipo checkbox dentro dos labels */
+  display: none;
+}
+
+.checkbox {
+  /* Estiliza o elemento do checkbox simulado */
+  border-radius: 100%;
+  height: 1.125rem;
+  min-width: 1.125rem;
+  
+  /* Transição suave de todas as propriedades */
+  transition: 0.2s all;
+
+  /* Centraliza conteúdo dentro do elemento */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkbox-unchecked {
+  /* Borda do checkbox não marcado */
+  border: 2px solid var(--blue);
+}
+
+.checkbox-unchecked:hover {
+  /* Fundo do checkbox não marcado ao passar o mouse */
+  background-color: var(--blue-dark);
+}
+
+.checkbox-checked {
+  /* Borda do checkbox marcado */
+  border: 2px solid var(--purple-dark);
+  /* Fundo do checkbox marcado */
+  background-color: var(--purple-dark);
+}
+
+.checkbox-checked:hover {
+  /* Borda do checkbox marcado ao passar o mouse */
+  border: 2px solid var(--purple);
+  /* Fundo do checkbox marcado ao passar o mouse */
+  background-color: var(--purple);
+}
+
+.paragraph {
+  /* Estilo para parágrafos normais */
+  font-size: 0.875rem;
+  /* Espaçamento entre linhas aumentado */
+  line-height: 140%;
+  /* Impede a seleção de texto dentro do parágrafo */
+  user-select: none;
+
+  /* Transição suave de todas as propriedades */
+  transition: 0.2s all;
+}
+
+.paragraph-checked {
+  /* Estilo para parágrafos com tarefas marcadas */
+  text-decoration: line-through;
+  /* Cor do texto para tarefas marcadas */
+  color: var(--gray-300);
+}
+
+.container button {
+  margin-top: 0.5rem;
+  margin-bottom: -0.9rem;
+  /* Remove a borda padrão do botão */
+  border: none;
+  /* Fundo transparente do botão */
+  background-color: transparent;
+  /* Borda arredondada do botão */
+  border-radius: 4px;
+
+  /* Espaçamento interno do botão */
+  padding: 5px 4px 2px 4px;
+  
+  /* Transição suave de todas as propriedades */
+  transition: 0.2s;
+}
+
+.container button line, .container button path {
+  /* Transição suave do preenchimento dos elementos SVG dentro do botão */
+  transition: 0.2s fill;
+}
+
+.container button:hover {
+  /* Fundo do botão ao passar o mouse */
+  background-color: var(--gray-400);
+}
+
+.icon {
+  color: var(--gray-300);
+}
+
+.icon:hover {
+  /* Cor do texto do botão ao passar o mouse */
+  color: var(--red);
+}

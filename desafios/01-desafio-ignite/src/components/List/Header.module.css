@@ -1,0 +1,58 @@
+.container {
+    /* Define um contêiner flexível */
+    display: flex;
+    /* Permite que o contêiner cresça e ocupe o espaço disponível */
+    flex: 1;
+    
+    /* Centraliza os itens ao longo do eixo transversal (vertical) */
+    align-items: center;
+    /* Distribui os itens com espaço entre eles */
+    justify-content: space-between;
+}
+
+/* Define o estilo para os elementos 'aside' dentro de '.container' */
+.container aside {
+    /* Define um contêiner flexível */
+    display: flex;
+    /* Centraliza os itens ao longo do eixo transversal (vertical) */
+    align-items: center;
+    /* Define um espaço entre os itens filhos */
+    gap: 0.5rem;
+    
+    /* Define a espessura do texto */
+    font-weight: bold;
+}
+
+/* Define o estilo para o primeiro elemento 'aside' dentro de '.container' */
+.container aside:first-child {
+    /* Define a cor do texto usando uma variável CSS */
+    color: var(--blue);
+}
+
+/* Define o estilo para o último elemento 'aside' dentro de '.container' */
+.container aside:last-child {
+    /* Define a cor do texto usando uma variável CSS */
+    color: var(--purple);
+}
+
+/* Define o estilo para os elementos 'p' dentro de 'aside' em '.container' */
+.container aside p {
+    /* Define o tamanho da fonte */
+    font-size: 0.875rem;
+}
+
+/* Define o estilo para os elementos 'span' dentro de 'aside' em '.container' */
+.container aside span {
+    /* Define o preenchimento interno (padding) do elemento 'span' */
+    padding: 2px 8px;
+    /* Adiciona bordas arredondadas ao elemento 'span' */
+    border-radius: 16px;
+    
+    /* Define o tamanho da fonte */
+    font-size: 0.75rem;
+    
+    /* Define a cor do texto usando uma variável CSS */
+    color: var(--gray-200);
+    /* Define a cor de fundo usando uma variável CSS */
+    background-color: var(--gray-400);
+}

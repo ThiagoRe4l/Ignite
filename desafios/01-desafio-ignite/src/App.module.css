@@ -1,0 +1,51 @@
+.content {
+    /* Define a largura máxima do contêiner */
+    max-width: 46rem;
+    /* Define a largura do contêiner para ocupar 100% do espaço disponível */
+    width: 100%;
+    
+    /* Centraliza o contêiner horizontalmente com margem automática */
+    margin: 0 auto;
+}
+
+/* Define a classe 'taskInfoContainer' */
+.taskInfoContainer {
+    /* Define um contêiner flexível */
+    display: flex;
+    /* Permite que o contêiner cresça e ocupe o espaço disponível */
+    flex: 1;
+    
+    /* Distribui os itens com espaço entre eles */
+    justify-content: space-between;
+    /* Define um espaço entre os itens filhos */
+    gap: 0.5rem;
+}
+
+/* Aplica estilos aos elementos 'input' e 'button' dentro de '.taskInfoContainer' */
+.taskInfoContainer input, button {
+    /* Translada os elementos 50% para cima no eixo Y */
+    transform: translateY(-50%);
+    
+    /* Define uma margem inferior específica */
+    margin-bottom: 2.3125rem;
+}
+
+/* Define a classe 'tasksList' */
+.tasksList {
+    /* Define um contêiner flexível */
+    display: flex;
+    /* Alinha os itens em uma coluna */
+    flex-direction: column;
+    /* Define um espaço entre os itens filhos */
+    gap: 1.5rem;
+}
+
+/* Aplica estilos aos elementos 'div' filhos diretos de '.tasksList' */
+.tasksList > div {
+    /* Define um contêiner flexível */
+    display: flex;
+    /* Alinha os itens em uma coluna */
+    flex-direction: column;
+    /* Define um espaço entre os itens filhos */
+    gap: 0.75rem;
+}

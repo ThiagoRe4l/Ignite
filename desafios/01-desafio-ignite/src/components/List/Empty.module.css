@@ -1,0 +1,30 @@
+.container {
+    /* Define o preenchimento interno (padding) do contêiner: 
+       4rem no eixo vertical e 1rem no eixo horizontal */
+    padding: 4rem 1rem;
+  
+    /* Define a borda superior do contêiner com 1px sólida e cor definida pela variável CSS 'var(--gray-400)' */
+    border-top: 1px solid var(--gray-400);
+    /* Adiciona bordas arredondadas ao contêiner */
+    border-radius: 8px;
+  
+    /* Define um contêiner flexível */
+    display: flex;
+    /* Alinha os itens em uma coluna */
+    flex-direction: column;
+    /* Centraliza os itens ao longo do eixo transversal (horizontal) */
+    align-items: center;
+    /* Define um espaço entre os itens filhos */
+    gap: 1rem;
+  
+    /* Define a cor do texto usando uma variável CSS */
+    color: var(--gray-300);
+}
+  
+/* Define o estilo para os elementos <p> dentro de '.container' */
+.container p {
+    /* Define um contêiner flexível */
+    display: flex;
+    /* Alinha os itens em uma coluna */
+    flex-direction: column;
+}

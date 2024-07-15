@@ -1,0 +1,16 @@
+.header {
+    /* Define um contêiner flexível */
+    display: flex;
+    /* Permite que o contêiner cresça e ocupe o espaço disponível */
+    flex: 1;
+    /* Alinha os itens no centro ao longo do eixo transversal (vertical) */
+    align-items: center;
+    /* Justifica o conteúdo no centro ao longo do eixo principal (horizontal) */
+    justify-content: center;
+
+    /* Define o preenchimento interno (padding) com 5rem no eixo vertical
+       e 0.625rem no eixo horizontal */
+    padding: 5rem 0.625rem;
+
+    background-color: var(--gray-700);
+}
